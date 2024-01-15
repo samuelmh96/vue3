@@ -9,10 +9,13 @@
 <script lang="ts" setup>
 import { Ref, ref, defineProps, defineEmits } from 'vue';
 
-const props = defineProps(['title', 'content']);
-const emits = defineEmits(['sayHi']);
+const props = defineProps({
+    'title': String,
+    'content': String
+});
+const emit = defineEmits(['sayHi']);
 const handleClick = () => {
-    emits('sayHi', message.value);
+    emit('sayHi', message.value);
 }
 let message: Ref<string> = ref('')
 </script>

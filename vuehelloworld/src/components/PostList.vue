@@ -57,7 +57,7 @@ function showAlert(msg: string) {
 .post-detail-container {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Fondo gris claro */
+    background-color: #f0f0f0; 
 }
 
 .container {
@@ -72,43 +72,42 @@ function showAlert(msg: string) {
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #92c7a3; /* Verde suave para simular la naturaleza */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar */
+    background-color: #92c7a3; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
 
 .post-detail:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .post-detail h3 {
-    color: #4d7c4c; /* Verde oscuro para el título */
+    color: #4d7c4c; 
     margin-bottom: 8px;
-    transition: color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
+    transition: color 0.3s ease-in-out; 
 }
 
 .post-detail:hover h3 {
-    color: #2c5e35; /* Cambio de color al pasar el ratón */
-}
+    color: #2c5e35; 
 
 .post-detail p {
-    color: #333; /* Color de texto predeterminado */
-    transition: color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
+    color: #333; 
+    transition: color 0.3s ease-in-out; 
 }
 
 .post-detail:hover p {
-    color: #555; /* Cambio de color al pasar el ratón */
+    color: #555; 
 }
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Cambia a disposición de columna en dispositivos pequeños */
+        flex-direction: column; 
         align-items: center;
     }
 
     .post-detail {
-        width: 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+        width: 100%; 
     }
 }
 </style>
